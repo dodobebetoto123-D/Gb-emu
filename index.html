@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GB-EMU — 게임보이/게임보이컬러 에뮬레이터</title>
+<meta name="description" content="설치 없이 웹 브라우저에서 바로 실행하는 게임보이·게임보이컬러 에뮬레이터.">
+<title>GB-EMU â ê²ìë³´ì´/ê²ìë³´ì´ì»¬ë¬ ìë®¬ë ì´í°</title>
 <style>
   body {
     background: #1a1a2e;
@@ -24,7 +25,7 @@
   }
   #dropzone.dragging { border-color: #8f8; background: #222; }
   #screen {
-    /* 내부 해상도 160x144, CSS로 3배(480x432) 표시, 픽셀 깨짐 유지 */
+    /* ë´ë¶ í´ìë 160x144, CSSë¡ 3ë°°(480x432) íì, í½ì ê¹¨ì§ ì ì§ */
     width: 480px;
     height: 432px;
     image-rendering: pixelated;
@@ -46,28 +47,28 @@
 </head>
 <body>
   <h1>GB-EMU</h1>
-  <p>게임보이 / 게임보이컬러 에뮬레이터 (v1)</p>
+  <p>ê²ìë³´ì´ / ê²ìë³´ì´ì»¬ë¬ ìë®¬ë ì´í° (v1)</p>
 
   <div id="dropzone">
-    <p>여기에 롬 파일(.gb / .gbc)을 드래그하거나 클릭해서 선택</p>
+    <p>ì¬ê¸°ì ë¡¬ íì¼(.gb / .gbc)ì ëëê·¸íê±°ë í´ë¦­í´ì ì í</p>
     <input type="file" id="rom-file" accept=".gb,.gbc">
   </div>
 
   <canvas id="screen" width="160" height="144"></canvas>
 
   <div class="controls">
-    <button id="btn-power">시작</button>
-    <button id="btn-reset">리셋</button>
+    <button id="btn-power">ìì</button>
+    <button id="btn-reset">ë¦¬ì</button>
   </div>
 
   <div id="status">
-    <p id="rom-title">롬: (없음)</p>
-    <p id="rom-mode">모드: -</p>
+    <p id="rom-title">ë¡¬: (ìì)</p>
+    <p id="rom-mode">ëª¨ë: -</p>
   </div>
 
   <div class="keys">
-    <p>조작법: 방향키, Z=B, X=A, Enter=Start, Shift=Select</p>
-    <p>롬 파일은 직접 구해서 올리세요.</p>
+    <p>ì¡°ìë²: ë°©í¥í¤, Z=B, X=A, Enter=Start, Shift=Select</p>
+    <p>ë¡¬ íì¼ì ì§ì  êµ¬í´ì ì¬ë¦¬ì¸ì.</p>
   </div>
 
   <script type="module" src="js/app.js"></script>
